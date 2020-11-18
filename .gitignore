@@ -1,5 +1,7 @@
 database/database.sqlite
 
+_ide_helper*
+
 /node_modules
 /public/css
 /public/js

@@ -13,47 +13,49 @@
 </head>
 
 <body class="bg-gray-300 ">
-    <nav class="p-6 bg-white flex justify-between mb-6">
-        <ul class="flex items-center">
-            <li class="p-3">
-                <a href="/">Home</a>
-            </li>
-            <li class="p-3">
-                <a href="{{ route('dashboard') }}">Dashboard</a>
-            </li>
-            <li class="p-3">
-                <a href="{{ route('posts') }}">Posts</a>
-            </li>
-        </ul>
-
-        <ul class="flex items-center">
-            @auth
+    <nav class="mb-6 w-full bg-white">
+        <div class="max-w-screen-lg mx-auto p-6 flex justify-between flex-wrap">
+            <ul class="flex items-center">
                 <li class="p-3">
-                    <a href="">{{ auth()->user()->name }}</a>
+                    <a href="/">Home</a>
                 </li>
-
                 <li class="p-3">
-                    <form action="{{ route('logout') }}"
-                          method="POST">
-                        @csrf
-
-                        <button href="">Logout</button>
-                    </form>
+                    <a href="{{ route('dashboard') }}">Dashboard</a>
                 </li>
-            @endauth
-
-            @guest
                 <li class="p-3">
-                    <a href="{{ route('login') }}">Login</a>
+                    <a href="{{ route('posts') }}">Posts</a>
                 </li>
+            </ul>
 
-                <li class="p-3">
-                    <a href="{{ route('register') }}">Register</a>
-                </li>
-            @endguest
-        </ul>
+            <ul class="flex items-center">
+                @auth
+                    <li class="p-3">
+                        <a href="">{{ auth()->user()->name }}</a>
+                    </li>
 
+                    <li class="p-3">
+                        <form action="{{ route('logout') }}"
+                              method="POST">
+                            @csrf
+
+                            <button href="">Logout</button>
+                        </form>
+                    </li>
+                @endauth
+
+                @guest
+                    <li class="p-3">
+                        <a href="{{ route('login') }}">Login</a>
+                    </li>
+
+                    <li class="p-3">
+                        <a href="{{ route('register') }}">Register</a>
+                    </li>
+                @endguest
+            </ul>
+        </div>
     </nav>
+
     @yield('content')
 
 </body>
