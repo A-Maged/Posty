@@ -44,6 +44,6 @@ class RegisterController extends Controller
         Auth::attempt($credentials, true);
 
         /* redirect */
-        return redirect()->route('dashboard');
+        return redirect()->route('posts');
     }
 }

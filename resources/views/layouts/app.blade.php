@@ -14,13 +14,10 @@
 
 <body class="bg-gray-300 ">
     <nav class="mb-6 w-full bg-white">
-        <div class="max-w-screen-lg mx-auto p-6 flex justify-between flex-wrap">
+        <div class="max-w-screen-lg mx-auto p-3 flex justify-between flex-wrap">
             <ul class="flex items-center">
                 <li class="p-3">
                     <a href="/">Home</a>
-                </li>
-                <li class="p-3">
-                    <a href="{{ route('dashboard') }}">Dashboard</a>
                 </li>
                 <li class="p-3">
                     <a href="{{ route('posts') }}">Posts</a>
@@ -29,7 +26,7 @@
 
             <ul class="flex items-center">
                 @auth
-                    <li class="p-3">
+                    <li class="p-3 capitalize">
                         <a href="">{{ auth()->user()->name }}</a>
                     </li>
 
@@ -38,18 +35,20 @@
                               method="POST">
                             @csrf
 
-                            <button href="">Logout</button>
+                            <button class="capitalize">logout</button>
                         </form>
                     </li>
                 @endauth
 
                 @guest
                     <li class="p-3">
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}"
+                           class="capitalize">login</a>
                     </li>
 
                     <li class="p-3">
-                        <a href="{{ route('register') }}">Register</a>
+                        <a href="{{ route('register') }}"
+                           class="capitalize">register</a>
                     </li>
                 @endguest
             </ul>
