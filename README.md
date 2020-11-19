@@ -15,4 +15,4 @@
     <li>I followed this <a href="https://youtu.be/MFh0Fd7BsjE">crash course</a>.</li>
 </ul>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MFh0Fd7BsjE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![](http://img.youtube.com/vi/MFh0Fd7BsjE/0.jpg)](http://www.youtube.com/watch?v=MFh0Fd7BsjE)
