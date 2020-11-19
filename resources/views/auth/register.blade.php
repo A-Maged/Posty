@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="flex justify-center">
-        <div class="w-6/12 max-w-lg p-6 bg-white p-6 rounded-lg">
+        <div class="w-full max-w-md bg-white p-6 rounded-lg">
 
             <form action="{{ route('register') }}"
                   method="POST">

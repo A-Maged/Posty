@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+a:hover {
+    @apply .text-red-600;
+}

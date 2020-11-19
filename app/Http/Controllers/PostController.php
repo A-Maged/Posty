@@ -9,7 +9,7 @@ class PostController extends Controller
 {
     public function __construct()
     {
-        $this->middleware(['auth'])->except('index');
+        $this->middleware(['auth'])->except(['index', 'show']);
     }
 
     public function index()
@@ -17,6 +17,11 @@ class PostController extends Controller
         $posts = Post::latest()->with(['user', 'likes'])->paginate(7);
 
         return view('posts.index', compact('posts'));
+    }
+
+    public function show(Post $post)
+    {
+        return view('posts.show', compact('post'));
     }
 
     public function store(Request $request)

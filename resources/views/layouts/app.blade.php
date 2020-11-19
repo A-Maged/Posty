@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>Laravel App</title>
 
     <link rel="stylesheet"
           href="{{ asset('css/app.css') }}">
@@ -56,7 +56,9 @@
         </div>
     </nav>
 
-    @yield('content')
+    <div class="max-w-screen-lg mx-auto p-6 pt-0">
+        @yield('content')
+    </div>
 
 </body>
 
