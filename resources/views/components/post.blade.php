@@ -1,6 +1,6 @@
 @props(['post' => $post])
 
-<div class="mb-5">
+<div class="mb-6">
     <a href="{{ route('users.posts', $post->user) }}"
        class="font-bold capitalize mr-1 hover:underline">
         {{ $post->user->name }}
@@ -11,10 +11,10 @@
         {{ $post->created_at->diffForHumans() }}
     </a>
 
-    <div>{{ $post->body }}</div>
+    <div class="mt-2">{{ $post->body }}</div>
 
     {{-- Likes & Delete --}}
-    <div class="flex items-center">
+    <div class="flex items-center mt-2">
         @auth
             @if ($post->likedBy(auth()->user()))
                 {{-- Unlike form --}}
@@ -49,6 +49,7 @@
                 </form>
             @endcan
         @endauth
+
         <span>{{ $post->likes->count() }} {{ Str::plural('like', $post->likes->count()) }}</span>
     </div>
 

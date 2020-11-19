@@ -7,8 +7,15 @@
         <div class="mb-10">
             <h1 class="text-2xl font-medium mb-1 capitalize">{{ $user->name }}</h1>
             <p>
-                Posted {{ $posts->count() }} {{ Str::plural('post', $posts->count()) }}
-                and recived {{ $user->receivedLikes->count() }} likes
+                Posted
+                <span class="text-blue-600">
+                    {{ $posts->count() }} {{ Str::plural('post', $posts->count()) }}
+                </span>
+
+                and recived
+                <span class="text-blue-600">
+                    {{ $user->receivedLikes->count() }} likes
+                </span>
             </p>
         </div>
 

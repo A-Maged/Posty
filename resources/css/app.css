@@ -4,6 +4,10 @@
 
 @tailwind utilities;
 
-a:hover {
+a {
     @apply .text-red-600;
+}
+
+a:hover {
+    @apply .text-red-200;
 }
