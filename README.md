@@ -16,3 +16,20 @@
 </ul>
 
 [![](http://img.youtube.com/vi/MFh0Fd7BsjE/0.jpg)](http://www.youtube.com/watch?v=MFh0Fd7BsjE)
+
+### Screenshots
+
+Posts view (signed in)
+<img src="https://raw.githubusercontent.com/A-Maged/Posty/main/public/images/posts.png">
+
+Posts view (signed out)
+<img src="https://github.com/A-Maged/Posty/blob/main/public/images/posts-guest.png?raw=true">
+
+User view
+<img src="https://github.com/A-Maged/Posty/blob/main/public/images/user.png?raw=true">
+
+Registration form
+<img src="https://github.com/A-Maged/Posty/blob/main/public/images/register.png?raw=true">
+
+Login form
+<img src="https://github.com/A-Maged/Posty/blob/main/public/images/login.png?raw=true">
