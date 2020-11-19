@@ -1,9 +1,3 @@
-<p align="center">
-    <a href="https://laravel.com" target="_blank">
-        <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400">
-    </a>
-</p>
-
 ### Some context for you
 
 <ul>
@@ -15,7 +9,11 @@
     <li>I followed this <a href="https://youtu.be/MFh0Fd7BsjE">crash course</a>.</li>
 </ul>
 
-[![](http://img.youtube.com/vi/MFh0Fd7BsjE/0.jpg)](http://www.youtube.com/watch?v=MFh0Fd7BsjE)
+<p align="center">
+    <a href="http://www.youtube.com/watch?v=MFh0Fd7BsjE" target="_blank">
+        <img src="http://img.youtube.com/vi/MFh0Fd7BsjE/0.jpg" width="600">
+    </a>
+</p>
 
 ### Screenshots
 
